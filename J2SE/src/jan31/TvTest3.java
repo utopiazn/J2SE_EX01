@@ -39,9 +39,7 @@ public class TvTest3 {
 		System.out.println("t1의 channel값은" +t1.channel+ "입니다");
 		
 		System.out.println("t1의 channel값은" +t1.channel+ "입니다");
-		System.out.println("t2의 channel값은" +t2.channel+ "입니다");
-		
-		
+		System.out.println("t2의 channel값은" +t2.channel+ "입니다");				
 		
 	}
 }
