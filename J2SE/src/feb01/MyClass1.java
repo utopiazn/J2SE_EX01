@@ -2,9 +2,9 @@ package feb01;
 
 class MyClass1 {
 	
-	private String name; // ¸â¹öº¯¼ö
+	private String name; // ë©¤ë²„ë³€ìˆ˜
 	
-	public MyClass1(){}; // »ı¼ºÀÚ
+	public MyClass1(){}; // ìƒì„±ì
 	
 	public MyClass1(String n){
 		name = n;

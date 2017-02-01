@@ -1,6 +1,6 @@
 package feb01;
 
-//getLength() ¿À¹ö·Îµù
+//getLength() ì˜¤ë²„ë¡œë”©
 class OverloadingTest2 {
 
 	public void getLength(int n){
@@ -19,7 +19,7 @@ class OverloadingTest2 {
 	
 	private int getLength(String str){
 		
-		System.out.println(str +": ÀÔ·ÂÇÑ °ªÀÇ ±æÀÌ" + str.length());		
+		System.out.println(str +": ì…ë ¥í•œ ê°’ì˜ ê¸¸ì´" + str.length());		
 		return 1;
 		
 	}
@@ -28,7 +28,7 @@ class OverloadingTest2 {
 	public static void main(String[] args){
 		
 		
-		OverloadingTest2 ot2 = new OverloadingTest2(); // °´Ã¼ »ı¼º
+		OverloadingTest2 ot2 = new OverloadingTest2(); // ê°ì²´ ìƒì„±
 		
 		ot2.getLength(1000);
 		ot2.getLength(3.14f);

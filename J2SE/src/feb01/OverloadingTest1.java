@@ -1,28 +1,28 @@
 package feb01;
 
 
-// overloading ¾Æ´Ô
+// overloading ì•„ë‹˜
 public class OverloadingTest1 {
 	
 	public void intLength(int a){
-		String s = String.valueOf(a); // Å¬·¡½º¸í,¸Ş¼Òµå¸í
+		String s = String.valueOf(a); // í´ë˜ìŠ¤ëª…,ë©”ì†Œë“œëª…
 		stringLength(s);
-		//System.out.println("ÀÔ·ÂÇÑ °ªÀÇ ±æÀÌ"+s.length());
+		//System.out.println("ì…ë ¥í•œ ê°’ì˜ ê¸¸ì´"+s.length());
 	}
 	
 	public void floatLength(float f){
 		String s = String.valueOf(f);
-		System.out.println("ÀÔ·ÆÇÑ °ªÀÇ ±æÀÌ"+s.length());
+		System.out.println("ì…ë µí•œ ê°’ì˜ ê¸¸ì´"+s.length());
 		
 	}
 	
 	public void stringLength(String str){
-		System.out.println("ÀÔ·ÂÇÑ °ªÀÇ ±æÀÌ"+ str.length());
+		System.out.println("ì…ë ¥í•œ ê°’ì˜ ê¸¸ì´"+ str.length());
 	}
 	
 	public static void main(String[] args){
 		
-		OverloadingTest1 ot1 = new OverloadingTest1(); //°´Ã¼ »ı¼º
+		OverloadingTest1 ot1 = new OverloadingTest1(); //ê°ì²´ ìƒì„±
 		
 		ot1.intLength(1000);
 		ot1.floatLength(3.14f);

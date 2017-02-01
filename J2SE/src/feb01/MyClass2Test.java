@@ -4,9 +4,9 @@ public class MyClass2Test {
 
 	public static void main(String[] args){
 		MyClass2 mc1 = new MyClass2();
-		MyClass2 mc2 = new MyClass2("¾Æ¶óÄ¡");
-		MyClass2 mc3 = new MyClass2("¸¶·çÄ¡",46);
-		MyClass2 mc4 = new MyClass2(46,"¿ÀÀÚ¹Ù");
+		MyClass2 mc2 = new MyClass2("ì•„ë¼ì¹˜");
+		MyClass2 mc3 = new MyClass2("ë§ˆë£¨ì¹˜",46);
+		MyClass2 mc4 = new MyClass2(46,"ì˜¤ìë°”");
 		
 		
 		System.out.println(mc1.getName()+","+mc1.getAge());
