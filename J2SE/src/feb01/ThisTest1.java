@@ -13,7 +13,7 @@ public class ThisTest1 {
 	}
 	public static void main(String[] args){
 		ThisTest1 tt = new ThisTest1();
-		tt.setA(200);
+		tt.setA(500);
 		System.out.println(tt.a);
 	}
 }

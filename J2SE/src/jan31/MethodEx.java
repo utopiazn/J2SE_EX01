@@ -1,40 +1,36 @@
 package jan31;
 
-public class MethodEx2 {
+public class MethodEx {
+
+	int var1 ,var2; //멤버변수들
 	
+	// public Methodex(){} 생성자.
 	
-	private int var; // 멤버변수(전역변수): 기본값:0
-	
-	public void setInt(int var){
-		this.var = var; //메소드의 절달되는 매개변수로 클래스의 전역변수를 초기화 한다.....
+	public int sum(int a,int b){ // 멤버메서드
+		//접근제한자 리턴타입 메소드명(매개변수1,매개변수2)
+		return a+b;
 	}
-	
-	public int getInt(){
-		return var;
-	}
-	
 	
 	public static void main(String[] args){
 		
-		MethodEx2 me2 = new MethodEx2(); // 객체 생성.
-		me2.setInt(1000); // 전역변수를 초기화 한다.
-		System.out.println("var : "+ me2.getInt());
+		//sum(1000, -10)  // 오류 static  영역(stack)과 메서드 영역(heap)이 틀려서  호출 불릉
 		
-		
+		MethodEx me = new MethodEx();  // 객체를 생성
+		int res = me.sum(1000, -10); //메서드 호출 ==>지역변수저장
+		System.out.println("res=" + res);
 	}
 	
 	
-
+	
 }
 
 /*
- * MethodEx2
- * ===========
- * int var
- * ===========
- * SetInt()
- * GetInt()
- * 
- * 
+ *MethodEx
+ *--------------------------------------------------
+ *int var1,var2 
+ * -----------------------------------------------
+ * sum()
  * 
  */
+
+
