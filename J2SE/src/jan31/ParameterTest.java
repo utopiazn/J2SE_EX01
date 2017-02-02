@@ -4,8 +4,8 @@ class Data {
 	
 	int x;
 	
-	static void change(int x){  // ±âº»Çü ¸Å°³ º¯¼ö
-		x=1000; //  ¸Ş¼­µå ¾ÈÀÇ   º¯¼öÀÓ   this.x ¸¦ »ç¿ëÇÒ°æ¿ì Àü¿ª º¯¼öÀÓ.
+	static void change(int x){  // ê¸°ë³¸í˜• ë§¤ê°œ ë³€ìˆ˜
+		x=1000; //  ë©”ì„œë“œ ì•ˆì˜   ë³€ìˆ˜ì„   this.x ë¥¼ ì‚¬ìš©í• ê²½ìš° ì „ì—­ ë³€ìˆ˜ì„.
 		System.out.println("charge() : x = " + x); //1000
 	}
 		
@@ -17,7 +17,7 @@ public class ParameterTest {
 	
 	public static void main(String[] args){
 	
-		Data d = new Data(); // °´Ã¼ »ı¼º
+		Data d = new Data(); // ê°ì²´ ìƒì„±
 		
 		d.x = 10;
 		

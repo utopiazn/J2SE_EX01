@@ -6,7 +6,7 @@ public class VarTest {
 	//argTest(String n)
 	//argTest(String n,String n1)
 	
-	public void argTest(String ...n){  // ¸Å°³º¯¼öÀÇ °¹¼ö¿¡ ´ëÇÑ Á¦ÇÑÀ» µÎÁö ¾Ê´Â´Ù.
+	public void argTest(String ...n){  // ë§¤ê°œë³€ìˆ˜ì˜ ê°¯ìˆ˜ì— ëŒ€í•œ ì œí•œì„ ë‘ì§€ ì•ŠëŠ”ë‹¤.
 		
 		for(int i = 0; i<n.length; i++){
 			System.out.println("n["+i+"]:"+n[i]);
@@ -16,7 +16,7 @@ public class VarTest {
 	}
 	
 	
-	public void argTest2(int n1,int n2,int n3,  String ...n){  // ¸Å°³º¯¼öÀÇ °¹¼ö¿¡ ´ëÇÑ Á¦ÇÑÀ» µÎÁö ¾Ê´Â´Ù. or   ´Ù¸¥ ÀÎÀÚ¸¦ ¹ŞÀ¸·í ¾øÁö¸¸ ¾Õ¿¡´Â ¹ŞÀ»¼ö ÀÕÀ½
+	public void argTest2(int n1,int n2,int n3,  String ...n){  // ë§¤ê°œë³€ìˆ˜ì˜ ê°¯ìˆ˜ì— ëŒ€í•œ ì œí•œì„ ë‘ì§€ ì•ŠëŠ”ë‹¤. or   ë‹¤ë¥¸ ì¸ìë¥¼ ë°›ìœ¼ë£» ì—†ì§€ë§Œ ì•ì—ëŠ” ë°›ì„ìˆ˜ ì‡ìŒ
 		
 		for(int i = 0; i<n.length; i++){
 			System.out.println("n["+i+"]:"+n[i]);
@@ -28,7 +28,7 @@ public class VarTest {
 	
 	public static void main(String[] args){
 		
-		VarTest vt = new VarTest(); //°´Ã¼ »ı¼º
+		VarTest vt = new VarTest(); //ê°ì²´ ìƒì„±
 		vt.argTest("arargs","Test");
 		
 		vt.argTest("100","600","900","1000");

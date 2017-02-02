@@ -3,13 +3,13 @@ package jan31;
 
 class Tv3{
 	
-	//TvÀÇ ¼Ó¼º (¸â¹öº¯¼ö)
-	String color = "";  // »ö»ó
-	boolean power= false;   // Àü¿ø
+	//Tvì˜ ì†ì„± (ë©¤ë²„ë³€ìˆ˜)
+	String color = "";  // ìƒ‰ìƒ
+	boolean power= false;   // ì „ì›
 	int channel = 0;
 	
 	
-	//TvÀÇ ±â´É(¸Ş¼­µå)
+	//Tvì˜ ê¸°ëŠ¥(ë©”ì„œë“œ)
 	void power(){
 		power = !power;
 	}
@@ -33,26 +33,26 @@ public class TvTest3 {
 		Tv3 t1 = new Tv3();
 		Tv3 t2 = new Tv3();
 		
-		//System.out.println("ÁÖ¼Ò°ª:"+ t1);
+		//System.out.println("ì£¼ì†Œê°’:"+ t1);
 		
-		System.out.println("t1ÀÇ channel°ªÀº"+ t1.channel +"ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº"+ t2.channel +"ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€"+ t1.channel +"ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€"+ t2.channel +"ì…ë‹ˆë‹¤.");
 		
 		
 		//t2.channel= 2;
-		//System.out.println("1111111"+ t2.channel +"ÀÔ´Ï´Ù.");	
+		//System.out.println("1111111"+ t2.channel +"ì…ë‹ˆë‹¤.");	
 		//t2 = null;
 		//t2 = new Tv3();
-		//System.out.println("22222222::: "+ t2.channel +"ÀÔ´Ï´Ù.");
+		//System.out.println("22222222::: "+ t2.channel +"ì…ë‹ˆë‹¤.");
 		
-		t2 = t1;   // t2 ¿¡ t1 ÁÖ¼Ò°ªÀ» ÀúÀåÇÔ.
+		t2 = t1;   // t2 ì— t1 ì£¼ì†Œê°’ì„ ì €ì¥í•¨.
 		
 		
 		t1.channel =7;
-		System.out.println("t1ÀÇ channel°ªÀº" +t1.channel+ "ÀÔ´Ï´Ù");
+		System.out.println("t1ì˜ channelê°’ì€" +t1.channel+ "ì…ë‹ˆë‹¤");
 		
-		System.out.println("t1ÀÇ channel°ªÀº" +t1.channel+ "ÀÔ´Ï´Ù");
-		System.out.println("t2ÀÇ channel°ªÀº" +t2.channel+ "ÀÔ´Ï´Ù");				
+		System.out.println("t1ì˜ channelê°’ì€" +t1.channel+ "ì…ë‹ˆë‹¤");
+		System.out.println("t2ì˜ channelê°’ì€" +t2.channel+ "ì…ë‹ˆë‹¤");				
 		
 	}
 }

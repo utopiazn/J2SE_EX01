@@ -1,34 +1,40 @@
 package jan31;
 
-public class MethodEx {
-
-	int var1 ,var2; //¸â¹öº¯¼öµé
+public class MethodEx2 {
 	
-	// public Methodex(){} »ı¼ºÀÚ.
 	
-	public int sum(int a,int b){ // ¸â¹ö¸Ş¼­µå
-		//Á¢±ÙÁ¦ÇÑÀÚ ¸®ÅÏÅ¸ÀÔ ¸Ş¼Òµå¸í(¸Å°³º¯¼ö1,¸Å°³º¯¼ö2)
-		return a+b;
+	private int var; // ë©¤ë²„ë³€ìˆ˜(ì „ì—­ë³€ìˆ˜): ê¸°ë³¸ê°’:0
+	
+	public void setInt(int var){
+		this.var = var; //ë©”ì†Œë“œì˜ ì ˆë‹¬ë˜ëŠ” ë§¤ê°œë³€ìˆ˜ë¡œ í´ë˜ìŠ¤ì˜ ì „ì—­ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™” í•œë‹¤.....
 	}
+	
+	public int getInt(){
+		return var;
+	}
+	
 	
 	public static void main(String[] args){
 		
-		//sum(1000, -10)  // ¿À·ù static  ¿µ¿ª(stack)°ú ¸Ş¼­µå ¿µ¿ª(heap)ÀÌ Æ²·Á¼­  È£Ãâ ºÒ¸ª
+		MethodEx2 me2 = new MethodEx2(); // ê°ì²´ ìƒì„±.
+		me2.setInt(1000); // ì „ì—­ë³€ìˆ˜ë¥¼ ì´ˆê¸°í™” í•œë‹¤.
+		System.out.println("var : "+ me2.getInt());
 		
-		MethodEx me = new MethodEx();  // °´Ã¼¸¦ »ı¼º
-		int res = me.sum(1000, -10); //¸Ş¼­µå È£Ãâ ==>Áö¿ªº¯¼öÀúÀå
-		System.out.println("res=" + res);
+		
 	}
 	
 	
-	
+
 }
 
 /*
- *MethodEx
- *--------------------------------------------------
- *int var1,var2 
- * -----------------------------------------------
- * sum()
+ * MethodEx2
+ * ===========
+ * int var
+ * ===========
+ * SetInt()
+ * GetInt()
+ * 
+ * 
  * 
  */

@@ -1,49 +1,49 @@
 package jan31;
-import javax.swing.*;  // JoptionPane Å¬·¡½º¸¦ »ç¿ëÇÏ±â À§ÇØ¼­ »ç¿ë.
+import javax.swing.*;  // JoptionPane í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ì„œ ì‚¬ìš©.
 
 public class numberGame {
 	
 	public static void main(String[] args){
 		
 		
-		// 1~100 »çÀÌÀÇ ÀÓÀÇÀÇ°ªÀ» ¾ò¾î¼­ answer¿¡ ÀúÀåÇÑ´Ù.		
+		// 1~100 ì‚¬ì´ì˜ ì„ì˜ì˜ê°’ì„ ì–»ì–´ì„œ answerì— ì €ì¥í•œë‹¤.		
 		int answer = (int)(Math.random()*100)+1;
-		int input = 0;    // »ç¿ëÀÚÀÔ·ÂÀ» ÀúÀåÇÑ °ø°£
-		String temp = ""; // »ç¿ëÀÚ ÀÔ·ÂÀ» Á¦ÀåÇÒ ÀÓ½Ã°ø°¡
-		int count = 0;    // ½ÃµµÈ½¼ö¸¦ ¼¼±âÀ§ÇÑ º¯¼ö
+		int input = 0;    // ì‚¬ìš©ìì…ë ¥ì„ ì €ì¥í•œ ê³µê°„
+		String temp = ""; // ì‚¬ìš©ì ì…ë ¥ì„ ì œì¥í•  ì„ì‹œê³µê°€
+		int count = 0;    // ì‹œë„íšŸìˆ˜ë¥¼ ì„¸ê¸°ìœ„í•œ ë³€ìˆ˜
 		
 		
 		do{
 			
 			count++;
 			
-			temp = JOptionPane.showInputDialog("1~100»çÀÌÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä."+ "³¡³»·Á¸é -1À» ÀÔ·ÂÇÏ¼¼¿ä.");
+			temp = JOptionPane.showInputDialog("1~100ì‚¬ì´ì˜ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”."+ "ëë‚´ë ¤ë©´ -1ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			
-			// »ç¿ëÀÚ°¡ Ãë¼Ò ¹öÆ°À» ´©¸£°Å³ª -1À» ÀÔ·ÂÇÏ¸é do- while¹®À» ¹ş¾î³­´Ù.			
+			// ì‚¬ìš©ìê°€ ì·¨ì†Œ ë²„íŠ¼ì„ ëˆ„ë¥´ê±°ë‚˜ -1ì„ ì…ë ¥í•˜ë©´ do- whileë¬¸ì„ ë²—ì–´ë‚œë‹¤.			
 			if(temp == null || temp.equals("-1")){				
 				break;
 			}
 			
-			System.out.println("ÀÔ·Â°ª : " + temp);
+			System.out.println("ì…ë ¥ê°’ : " + temp);
 			
 			
-			// »ç¿ëÀÚÀÔ·ÂÀ» ¹®ÀÚ¿­·Î ¹Ş¾Æ¿À±â ¶§¹®¿¡  int·Î º¯È¯ÇØ ÁÖ¾î¾ßÇÑ´Ù.			
+			// ì‚¬ìš©ìì…ë ¥ì„ ë¬¸ìì—´ë¡œ ë°›ì•„ì˜¤ê¸° ë•Œë¬¸ì—  intë¡œ ë³€í™˜í•´ ì£¼ì–´ì•¼í•œë‹¤.			
 			input = Integer.parseInt(temp);
 			
 			if(answer >  input){
-				System.out.println("´õ Å« ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");				
+				System.out.println("ë” í° ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");				
 			}else if(answer < input){
-				System.out.println("´õ ÀÛÀº¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ë” ì‘ì€ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			}else{
-				System.out.println("¸ÂÃè½À´Ï´Ù.");
-				System.out.println("½ÃµµÈ½¼ö´Â "+count+"¹ø ÀÔ´Ï´Ù.");
+				System.out.println("ë§ì·„ìŠµë‹ˆë‹¤.");
+				System.out.println("ì‹œë„íšŸìˆ˜ëŠ” "+count+"ë²ˆ ì…ë‹ˆë‹¤.");
 				break;
 			}
 			
 			
 			
 			
-		}while(true);     // ¹«ÇÑ ¹İº¹
+		}while(true);     // ë¬´í•œ ë°˜ë³µ
 		
 		
 		

@@ -4,7 +4,7 @@ class MyMath2{
 	
 	long a,b;
 	
-	// ÀÎ½ºÅÏ½º º¯ a,b¸¸À» ÀÌ¿ëÇØ¼­ ÀÛ¾÷ÇÏ¹Ç·Î ¸Å°³ º¯¼ö°¡ ÇÊ¿ä¾ø´Ù.
+	// ì¸ìŠ¤í„´ìŠ¤ ë³€ a,bë§Œì„ ì´ìš©í•´ì„œ ì‘ì—…í•˜ë¯€ë¡œ ë§¤ê°œ ë³€ìˆ˜ê°€ í•„ìš”ì—†ë‹¤.
 	long add(){
 		return a+b;
 	}
@@ -21,7 +21,7 @@ class MyMath2{
 	}
 	
 	
-	// ÀÎ½ºÅÏ½ºº¯¼ö¿Í °ü°è¾øÀÌ ¸Å°³ º¯¼ö¸¸À¸·Î ÀÛ¾÷ÀÌ °¡´ÉÇÏ´Ù.
+	// ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì™€ ê´€ê³„ì—†ì´ ë§¤ê°œ ë³€ìˆ˜ë§Œìœ¼ë¡œ ì‘ì—…ì´ ê°€ëŠ¥í•˜ë‹¤.
 	
 	static long add(long a, long b){
 		return (a+b);		
@@ -53,7 +53,7 @@ public class MyMathTest2 {
 		long b = 100L;
 		
 		
-		//Å¬·¡½º ¸Ş¼­µå È£Ãâ
+		//í´ë˜ìŠ¤ ë©”ì„œë“œ í˜¸ì¶œ
 		System.out.println(MyMath2.add(a, b));
 		System.out.println(MyMath2.subtract(a, b));
 		System.out.println(MyMath2.multiply(a, b));
@@ -67,7 +67,7 @@ public class MyMathTest2 {
 		mm.a = a;
 		mm.b = b;
 		
-		// ÀÎ½ºÅÏ½º ¸Ş¼­µå´Â °´Ã¼ »ı¼º ÈÄ¿¡¸¸ È£ÃâÀÌ °¡´ÉÇÔ.	
+		// ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” ê°ì²´ ìƒì„± í›„ì—ë§Œ í˜¸ì¶œì´ ê°€ëŠ¥í•¨.	
 		System.out.println(mm.add());
 		System.out.println(mm.subtract());
 		System.out.println(mm.multiply());

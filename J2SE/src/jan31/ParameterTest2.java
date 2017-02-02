@@ -18,7 +18,7 @@ public class ParameterTest2 {
 		
 	}
 	
-	static void change(Data2 d){ // ÂüÁ¶Çü ¸Å°³ º¯¼ö
+	static void change(Data2 d){ // ì°¸ì¡°í˜• ë§¤ê°œ ë³€ìˆ˜
 		d.x = 1000;
 		System.out.println("change() : x = " + d.x); //1000
 	}

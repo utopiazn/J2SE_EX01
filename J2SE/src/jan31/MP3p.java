@@ -2,7 +2,7 @@ package jan31;
 
 public class MP3p {
 	
-	//¸â¹öÇÊµå ¼±¾ð
+	//ë©¤ë²„í•„ë“œ ì„ ì–¸
 	String color;
 	int memory;
 	

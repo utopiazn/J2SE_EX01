@@ -20,8 +20,8 @@ public class MP3pMain {
 	
 	public static void main(String[] a){
 		
-		//MP3p m3; //°´Ã¼¸¦ ¼±¾ğ
-		//m3 = new MP3p(); // °´Ã¼¸¦ »ı¼º
+		//MP3p m3; //ê°ì²´ë¥¼ ì„ ì–¸
+		//m3 = new MP3p(); // ê°ì²´ë¥¼ ìƒì„±
 		
 		MP3p m3 = new MP3p();	
 		

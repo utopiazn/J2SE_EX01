@@ -1,8 +1,8 @@
 package jan31;
 
-// call by reference : ¸Ş¼­µå¿¡ Àü´ŞµÈ ¸Å°³º¯¼öÀÇ ¿øº»Àº ¸Å°³º¯¼ö °°ÀÌ º¯°æµÈ´Ù..
+// call by reference : ë©”ì„œë“œì— ì „ë‹¬ëœ ë§¤ê°œë³€ìˆ˜ì˜ ì›ë³¸ì€ ë§¤ê°œë³€ìˆ˜ ê°™ì´ ë³€ê²½ëœë‹¤..
 public class ReferenceParameter {
-	public void increase(int[] n){ // n = ref1 :ref1 ÀÌ¶ó´Â ¹è¿­ÀÌ °¡¸®Å°´Â °´Ã¼ nÀÌ¶ó´Â ¹è¿­µµ °¡¸®Å²´Ù 
+	public void increase(int[] n){ // n = ref1 :ref1 ì´ë¼ëŠ” ë°°ì—´ì´ ê°€ë¦¬í‚¤ëŠ” ê°ì²´ nì´ë¼ëŠ” ë°°ì—´ë„ ê°€ë¦¬í‚¨ë‹¤ 
 	
 		
 	}
@@ -10,7 +10,7 @@ public class ReferenceParameter {
 	public static void main(String[] args){
 		
 		int[] ref1 = {100,800,1000}; // ref1.length =3
-		ReferenceParameter rp = new ReferenceParameter(); // °´Ã¼»ı¼º
+		ReferenceParameter rp = new ReferenceParameter(); // ê°ì²´ìƒì„±
 		rp.increase(ref1);
 		
 	
@@ -31,7 +31,7 @@ public class ReferenceParameter {
  * ReferenceParameter
  * ==================
  * intcrease(int[] n)
- * ¹è¿­
+ * ë°°ì—´
  * int[] a = new int[5]
  * int[] a = {1,2,3,4,5};
  * a[0] =1 a[1]=2

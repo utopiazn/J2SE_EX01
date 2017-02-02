@@ -1,6 +1,6 @@
 package jan31;
 
-// call by value : var1ÀÌ¶ó´Â ¿ù·¡ º¯¼ö °ª¿¡´Â º¯µ¿ÀÌ ¾ø´Ù.
+// call by value : var1ì´ë¼ëŠ” ì›”ë˜ ë³€ìˆ˜ ê°’ì—ëŠ” ë³€ë™ì´ ì—†ë‹¤.
 
 
 public class ValueParameter {
@@ -12,9 +12,9 @@ public class ValueParameter {
 	}
 	
 	public static void main(String[] args){
-		int var1 = 100; // Áö¿ªº¯¼ö
+		int var1 = 100; // ì§€ì—­ë³€ìˆ˜
 		
-		ValueParameter vp = new ValueParameter(); // °´Ã¼ »ı¼º
+		ValueParameter vp = new ValueParameter(); // ê°ì²´ ìƒì„±
 		int var2 = vp.increase(var1); // 101
 		System.out.println("var1 : "+ var1 + ", var2 : " + var2);
 		

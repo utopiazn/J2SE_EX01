@@ -2,12 +2,12 @@ package jan31;
 
 class Tv2{
 	
-	// TvÀÇ ¼Ó¼º(¸â¹öº¯¼ö)
-	String color = ""; // »ö»ó
-	boolean power;     // Àü¿ø »óÅÂ(on/off) 
-	int channel= 0;    // Ã¤³Î :0
+	// Tvì˜ ì†ì„±(ë©¤ë²„ë³€ìˆ˜)
+	String color = ""; // ìƒ‰ìƒ
+	boolean power;     // ì „ì› ìƒíƒœ(on/off) 
+	int channel= 0;    // ì±„ë„ :0
 	
-	// TvÀÇ ±â´É(¸Ş¼Òµå)
+	// Tvì˜ ê¸°ëŠ¥(ë©”ì†Œë“œ)
 	void power(){
 		power = !power;
 	}
@@ -21,7 +21,7 @@ class Tv2{
 		if(channel >1)
 			--channel;
 		else
-			System.out.println("Ã¤³ÎÀ» ´õÀÌ»ó ³·Ãâ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì±„ë„ì„ ë”ì´ìƒ ë‚®ì¶œìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 	}
 }
 
@@ -33,14 +33,14 @@ public class TvTest2 {
 		Tv2 t1 = new Tv2();
 		Tv2 t2 = new Tv2();
 		
-		System.out.println("t1ÀÇ channel°ªÀº"+ t1.channel + "ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº"+ t2.channel + "ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€"+ t1.channel + "ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€"+ t2.channel + "ì…ë‹ˆë‹¤.");
 	
-		t1.channel = 7; // channel °ªÀ» 7À¸·Î ÇÑ´Ù.		
-		System.out.println("t1ÀÇ channel°ªÀº"+t1.channel +"·Î º¯°æÇÏ¿´½À´Ï´Ù.");
+		t1.channel = 7; // channel ê°’ì„ 7ìœ¼ë¡œ í•œë‹¤.		
+		System.out.println("t1ì˜ channelê°’ì€"+t1.channel +"ë¡œ ë³€ê²½í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		
-		System.out.println("t1ÀÇ channel°ªÀº" + t1.channel +"ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº" + t2.channel +"ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€" + t1.channel +"ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€" + t2.channel +"ì…ë‹ˆë‹¤.");
 		
 		
 		

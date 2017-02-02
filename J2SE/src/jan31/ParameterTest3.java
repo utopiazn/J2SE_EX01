@@ -3,7 +3,7 @@ package jan31;
 public class ParameterTest3 {
 	public static void main(String[] args){
 		
-		int[] x = {10}; // Å©±â°¡ 1ÀÎ ¹è¿­.   x[0] = 10;
+		int[] x = {10}; // í¬ê¸°ê°€ 1ì¸ ë°°ì—´.   x[0] = 10;
 		System.out.println("main() : x = "+ x[0]);//10
 		
 		change(x);
@@ -13,7 +13,7 @@ public class ParameterTest3 {
 		
 	}
 	
-	static void change(int[] x){  // ÂüÁ¶Çü ¸Å°³ º¯¼ö
+	static void change(int[] x){  // ì°¸ì¡°í˜• ë§¤ê°œ ë³€ìˆ˜
 		
 		x[0] = 10000;
 		System.out.println("change() : x = "+ x[0]); //1000
