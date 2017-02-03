@@ -42,7 +42,7 @@ public class StringReplace {
 			buffer.append(nw);
 			
 			// 발견한 위치 이후부터 다시 치환을 시작한다.
-			replace(old,nw,index + old.length());
+			replace(old,nw,index + old.length()); 
 			
 		}else{
 			//더이상 치환할 문자열을 못 찾으면 나머지 문자열을 buffer에 저장한다.
