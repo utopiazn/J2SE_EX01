@@ -50,3 +50,9 @@ class VCR{
 		vcr.ff();	
    }
 }
+ 
+ /*
+This is a FireEngine instance.
+This is a Car instance.
+This is an Object instance.  
+*/
