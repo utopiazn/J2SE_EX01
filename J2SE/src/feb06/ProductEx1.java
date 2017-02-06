@@ -11,7 +11,7 @@ public class ProductEx1 {
 		System.out.println(p1.equals(p2));
 		System.out.println("p1 hashCode" + p1.hashCode()+" , p1 : "+p1.toString());
 		
-		System.out.println("p1 hashCode" + p2.hashCode()+" , p2 : "+p2.toString());
+		System.out.println("p2 hashCode" + p2.hashCode()+" , p2 : "+p2.toString());
 		
 		
 		
@@ -20,3 +20,14 @@ public class ProductEx1 {
 	}
 
 }
+
+
+/*
+
+false
+true
+p1 hashCode67051495 , p1 : En,Ca
+p1 hashCode67051495 , p2 : En,Ca
+
+
+*/
