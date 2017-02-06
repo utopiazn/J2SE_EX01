@@ -35,7 +35,10 @@ public class Product { /* extends Object*/
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return super.toString();
+		
+		return name;
+		
+		//return super.toString();
 	}
 	
 	
