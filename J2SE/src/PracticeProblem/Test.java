@@ -1,6 +1,21 @@
 package PracticeProblem;
 
 
+class Super {
+    int index = 5;
+    public void printVal() {
+         System.out.println("Super");
+    }
+}
+
+  class Sub extends Super {
+    int index = 2;
+    public void printVal() {
+          System.out.println("Sub");
+    }
+}
+
+
 class Test12 {
     int x;
     public Test12(int x) {
@@ -9,6 +24,8 @@ class Test12 {
 }
 
 public class Test {
+	
+	 private static int a=2;
 	
 	/*
 	String s;
@@ -29,8 +46,22 @@ public class Test {
               v1=v2;
               System.out.println("log2:" +v1.x + ", " + v2.x);
     }	   
-	   
+	public static void modify(int b) {
+		
+		a +=b;
+    }   
+	
 	public static void main(String[] args){
+		
+		
+		  Super sup=new Sub();
+          System.out.println(sup.index + " ");
+          sup.printVal();
+		
+		/*
+		 modify(a);
+         System.out.println(a);
+		
 		
 		Test12 x1 = new Test12(30);
 		Test12 x2 = new Test12(10);
@@ -39,7 +70,7 @@ public class Test {
 		
 		 System.out.println("log3:" +x1.x + ", " + x2.x);
 		
-	
+	*/
 	//	 Test t = new Test();
       //   t.go();
 		/*

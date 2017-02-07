@@ -7,7 +7,7 @@ public class Test2 {
    
 	public static void main(String[] args){
 
-	
+/*	
 		
 		for(int i =0; i <5; i++){
 			
@@ -17,8 +17,8 @@ public class Test2 {
 			System.out.println("");
 		}
 		
-		
-		
+*/	
+/*		
 		System.out.println("\n 이차원 배열");
 		
 
@@ -46,10 +46,12 @@ public class Test2 {
 		}
 			
 				
+	*/
+		
 		
 		System.out.println("\n 가변 배열");
 		
-		String[][] test = new String[5][];
+		String[][] test = new String[15][];
 		
 		for(int i =0; i <test.length; i++){
 			
@@ -64,7 +66,7 @@ public class Test2 {
 		}
 		
 		
-		
+/*		
 		for(int i =0; i <test.length; i++){
 			
 			for(int j =0; j < test[i].length; j++){
@@ -73,7 +75,18 @@ public class Test2 {
 			}
 			System.out.println("");	
 		}
+	*/	
 		
+		for(String[] s: test ){
+			
+			//String[] ss = s;
+			
+			for(int i =0 ;i<s.length;i++){
+				System.out.print(s[i]);	
+			}
+				
+			System.out.println("");	
+		}
 		
 	}
 
