@@ -78,13 +78,9 @@ public class Test2 {
 	*/	
 		
 		for(String[] s: test ){
-			
-			//String[] ss = s;
-			
 			for(int i =0 ;i<s.length;i++){
 				System.out.print(s[i]);	
-			}
-				
+			}				
 			System.out.println("");	
 		}
 		
