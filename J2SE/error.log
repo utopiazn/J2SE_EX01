@@ -1,0 +1,19 @@
+예외메시지 : / by zero
+-----------------------------------------------
+예외발생시간 : Wed Feb 08 13:25:58 KST 2017
+java.lang.ArithmeticException: / by zero
+	at feb08_add.ExceptionEx14.main(ExceptionEx14.java:27)
+예외메시지 : / by zero
+-----------------------------------------------
+-----------------------------------------------
+예외발생시간 : Wed Feb 08 13:26:04 KST 2017
+java.lang.ArithmeticException: / by zero
+	at feb08_add.ExceptionEx14.main(ExceptionEx14.java:27)
+예외메시지 : / by zero
+-----------------------------------------------
+-----------------------------------------------
+예외발생시간 : Wed Feb 08 13:26:33 KST 2017
+java.lang.ArithmeticException: / by zero
+	at feb08_add.ExceptionEx14.main(ExceptionEx14.java:27)
+예외메시지 : / by zero
+-----------------------------------------------
