@@ -22,9 +22,9 @@ public class MapEx1 {
 		
 		Set<Integer> keys = map.keySet();
 		
-		for(Integer n : keys)
+		for(Integer n : keys){
 			out.println(map.get(n)); // 맵에서 읽어 오기
-		
+		}
 		
 		
 		
