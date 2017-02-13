@@ -36,8 +36,10 @@ public class PropertiesEx1 {
 			out.println(keys.nextElement());
 		}
 		
-		prop.list(System.out);
-		
+		prop.list(System.out);		
+		//dbDRV=oracle.jdbc.driver.OracleDriver
+		//lovely=SunAe
+		//UserName=Michael
 	}
 
 }
