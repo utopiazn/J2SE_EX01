@@ -11,21 +11,17 @@ public class RandomEx6 {
 	
 	public static int logcount =1;
 	
-	public static void log(){
+	public static void log(String str){
 		
-		out.println("log"+logcount++);
+		out.println("log"+logcount++ + " :: " +str);
 	}
 	
 	public static void main(String[] args){
-		
-		
-		
+			
 		 
 		String[] data = readData();
 		
-		
-		
-		
+
 		HashMap map = new HashMap();
 		
 		for(int i =0; i<100; i++){
@@ -68,19 +64,24 @@ public class RandomEx6 {
 		Enumeration e = prop.propertyNames();
 		int sum =0;
 		
-		 
+		e.hasMoreElements();
 		//각 요소의 값을 더해서 요소들을 담을 배열의 크기를 결정한다.
 		
 		while(e.hasMoreElements()){
 			
 			
 			String element = (String)e.nextElement();
-			int value = Integer.parseInt(prop.getProperty(element));
+			
+			
+			
+			int value = Integer.parseInt(prop.getProperty(element));		
+			
+				
 			sum += value;
 			out.println(element+ "="+ value);
+			
+			
 		}
-		
-		
 		
 		String[] data = new String[sum];
 		
@@ -93,14 +94,18 @@ public class RandomEx6 {
 		
 		while(e.hasMoreElements()){
 			
-			String element = (String)e.nextElement();
+			
+			String element = (String)e.nextElement();			
+		
+		
 			int value = Integer.parseInt(prop.getProperty(element));
 			
 			for(int x =0; x <value; x++,i++){
 				data[i] = element;
 			}			
-			
+		
 		}
+		
 		
 		return data;
 	}
@@ -130,6 +135,7 @@ public class RandomEx6 {
 			
 			
 		}
+		
 		
 		return new String(bar);
 	}
