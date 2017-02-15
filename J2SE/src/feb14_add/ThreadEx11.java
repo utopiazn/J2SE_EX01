@@ -39,14 +39,14 @@ public class ThreadEx11 implements Runnable {
 			
 			System.out.println(i);
 			
-			if(i==5)
+			if(i==5){
 				autoSave = true;
-			else 
+			}else{ 
 				autoSave = false;
+			}
 		}
 		
-		System.out.println("프로그램을 종료합니다.");
-		
+		System.out.println("프로그램을 종료합니다.");		
 	}
 	
 	public void autoSave(){
