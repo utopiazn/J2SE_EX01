@@ -3,6 +3,8 @@ package feb15_file;
 import java.io.*;
 import java.util.*;
 
+//파일 확장자 잘못 실행 시켰다가는 파일  호로록 날려묵음 ㅠㅠ
+
 public class FileEx8 {
 	static int deltedFiles =0;
 	
