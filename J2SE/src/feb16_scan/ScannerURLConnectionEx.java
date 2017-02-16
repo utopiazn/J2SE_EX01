@@ -10,7 +10,10 @@ public class ScannerURLConnectionEx {
 		URLConnection urlCon =null;
 		Scanner scan = null;
 		try{
-			urlCon =new URL("http://docs.oracle.com/javase/7/docs/api/overview-summary.html").openConnection();
+			//urlCon =new URL("http://docs.oracle.com/javase/7/docs/api/overview-summary.html").openConnection();
+			
+			urlCon =new URL("http://www.naver.com").openConnection();
+			
 			scan = new Scanner(urlCon.getInputStream());
 			
 			scan.useDelimiter("\\Z");

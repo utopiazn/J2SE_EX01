@@ -12,7 +12,8 @@ public class InOutStreamReaderEx {
 		
 		OutputStreamWriter out = new OutputStreamWriter(System.out);
 		
-		out.write("id : "+ id + " , password : "+password);
+		out.write("coding :"+out.getEncoding() +  "  id : "+ id + " , password : "+password);
+		//out.write("id : "+ id + " , password : "+password);
 		out.close();	
 		
 	}
