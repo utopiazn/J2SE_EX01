@@ -10,13 +10,20 @@ public class ScannerReadableEx {
 		Scanner scan = null;
 		FileReader fr = null;
 		
+		BufferedReader br = null;
+		
+		
 		try{
 			fr = new FileReader("C:\\io\\scan.txt");
-
-			//BufferedReader in = new BufferedReader(fr,"UTF8");
-			//BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\io\\scan.txt"),"UTF8"));
 			
-			scan = new Scanner(fr);
+					
+			
+			br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\io\\scan.txt"),"MS949"));  // 텍스트 파일
+			
+			
+			//scan = new Scanner(fr); //한글 개짐
+			scan = new Scanner(br); //수정함.
+		
 			/*
 			while(scan.hasNextDouble()){
 				out.printf("스캔  : %.2f %n" ,scan.nextDouble());
@@ -34,6 +41,8 @@ public class ScannerReadableEx {
 			
 			try{
 				if(fr != null) fr.close();
+				if(br != null) br.close();
+				
 			}catch(IOException ioe){
 				ioe.printStackTrace();
 			}

@@ -11,6 +11,8 @@ public class BufferedReaderEx {
 		
 		try{
 			
+			
+			
 			fr = new FileReader("C:\\Java\\git\\J2SE_EX01\\J2SE\\src\\feb15_character\\BufferedReaderEx.java");
 			br = new BufferedReader(fr);
 			String msg;
